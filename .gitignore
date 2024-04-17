@@ -1,0 +1,10 @@
+#backend
+
+
+# frontend
+
+# dependencies
+./frontend/node_modules
+
+# next.js
+./frontend/.next/
