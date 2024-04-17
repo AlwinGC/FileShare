@@ -1,0 +1,41 @@
+.container{
+    height: 90vh;
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headText {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    margin: 0;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.subHead {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    margin: 0;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.boxContainer {
+    max-width: 500px;
+    border: 10px solid rgba(0, 0, 0, 0.3);   
+    border-radius: 25px;
+    margin: 10px 0px;
+}
+
+.innerText {
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    margin: 0;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+}

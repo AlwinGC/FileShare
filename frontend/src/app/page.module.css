@@ -1,0 +1,175 @@
+/* Home */
+
+.container {
+  height: 100%;
+  background: linear-gradient(45deg, #ff5622 25%, #ffffff00 25%),
+    linear-gradient(225deg, #27272a 25%, #bfbfbf 25%);
+  width: 100%;
+  padding: 3rem 0;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.sectionHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionContent {
+  max-width: 80%;
+  background: #041e42;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+.uploadCol,
+.signupCol {
+  width: auto;
+  min-height: 35vh;
+  padding-left: 10px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.upload,
+.account {
+  color: rgba(10, 10, 10, 0.75);
+  font-size: 350px;
+}
+
+.upload {
+  margin: 0px -30px;
+}
+
+.headingText {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  margin: 0px;
+  font-size: 50px;
+  line-height: 1.5cm;
+  color: rgb(245, 245, 245);
+}
+
+.subHeading {
+  font-family: var(--font-josefin_sans);
+  font-weight: 500;
+  margin: 0px;
+  font-size: 25px;
+  padding: 20px 0px;
+  color: rgb(245, 245, 245);
+}
+
+.btnHome {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 5px 10px;
+  transition: all 0.3s ease-out;
+  background-color: green;
+  border-radius: 50px;
+}
+
+.btnHome:hover {
+  background: #fff;
+  color: #3b3b3b;
+  transition: 250ms;
+}
+
+@media screen and (max-width: 1240px) {
+  .sectionContent {
+    padding: 10px;
+  }
+
+  .headingText {
+    font-size: 40px;
+    line-height: 1.2cm;
+  }
+
+  .subHeading {
+    font-size: 20px;
+    padding: 15px 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .upload,
+  .account {
+    font-size: 300px;
+  }
+
+  .headingText {
+    font-size: 30px;
+  }
+
+  .subHeading {
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+
+  .btnHome {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    gap: 3rem;
+  }
+
+  .sectionContent {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    max-width: 360px;
+    padding-bottom: 30px;
+  }
+
+  .upload,
+  .account {
+    font-size: 250px;
+  }
+
+  .uploadCol,
+  .signupCol {
+    min-height: auto;
+    justify-content: flex-start;
+  }
+
+  .headingText {
+    font-size: 30px;
+    line-height: 1cm;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .sectionContent {
+    width: 90%;
+    padding-bottom: 30px;
+  }
+
+  .upload,
+  .account {
+    font-size: 200px;
+  }
+
+  .headingText {
+    font-size: 26px;
+  }
+
+  .subHeading {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,144 @@
+:root {
+  --bg: #222222;
+  --bgSoft: #27272a;
+  --btn: green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: visible;
+}
+
+.canvas {
+  min-height: 90vh;
+  max-width: 100%;
+}
+
+.toastPosition {
+  top: 90px !important;
+}
+
+/* Not-Found */
+
+.notFoundContainer {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound {
+  color: #000;
+}
+
+.notFoundText {
+  color: #000;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Loading */
+
+.loadingContainer {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+}
+
+.loading {
+  display: flex;
+}
+.loading .dot {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  margin: 0.8em;
+  border-radius: 50%;
+}
+.loading .dot::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  animation: wave 2s ease-out infinite;
+}
+.loading .dot:nth-child(1) {
+  background: #fff;
+}
+.loading .dot:nth-child(1)::before {
+  animation-delay: 0s;
+}
+.loading .dot:nth-child(2) {
+  background: #fff;
+}
+.loading .dot:nth-child(2)::before {
+  animation-delay: 0.1s;
+}
+.loading .dot:nth-child(3) {
+  background: #fff;
+}
+.loading .dot:nth-child(3)::before {
+  animation-delay: 0.2s;
+}
+.loading .dot:nth-child(4) {
+  background: #fff;
+}
+.loading .dot:nth-child(4)::before {
+  animation-delay: 0.3s;
+}
+.loading .dot:nth-child(5) {
+  background: #fff;
+}
+.loading .dot:nth-child(5)::before {
+  animation-delay: 0.4s;
+}
+
+@keyframes wave {
+  50%,
+  75% {
+    transform: scale(2);
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.loadingText {
+  font-family: var(--font-roboto_mono);
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 480px) {
+  .toastPosition {
+    top: 80px !important;
+  }
+}

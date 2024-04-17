@@ -1,0 +1,64 @@
+.container {
+  max-width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mainContent {
+  width: calc(100% - 200px);
+  position: sticky;
+  height: 100%;
+  padding: 2rem;
+}
+
+.fileListing {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.files {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.fileName {
+  width: 30%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.deleteBtn,
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 2px 8px;
+  border-radius: 50px;
+  border-style: none;
+}
+
+.deleteBtn:hover,
+.downloadBtn:hover {
+  background-color: #c5c5c5;
+}
+
+.icons {
+  font-size: 25px;
+}
+
